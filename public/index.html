@@ -2,6 +2,7 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online hlasování – Chcete být seniorem?</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
@@ -9,7 +10,12 @@
       font-family: sans-serif;
       text-align: center;
       padding: 2rem;
+      background-image: url('pozadi.png');
+      background-repeat: no-repeat;
+       background-attachment: fixed;
+  background-size: cover;
     }
+   
     .answers button {
       margin: 1rem;
       padding: 1rem 2rem;
@@ -31,7 +37,7 @@
 </head>
 <body>
 
-  <h1>Hlasuj jako publikum</h1>
+  <h1>Hlasuj jako publikum v CHCETE BÝT SENIOREM!</h1>
 
   <div class="answers">
     <button onclick="sendVote('A')">A</button>
