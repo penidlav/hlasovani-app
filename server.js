@@ -37,7 +37,7 @@ app.get('/results', (req, res) => {
 
 app.post('/reset', (req, res) => {
   const { password } = req.body;
-  if (password !== 'tajneheslo') {
+  if (password !== '0') {
     return res.status(403).json({ success: false, message: 'Špatné heslo' });
   }
   votes = { A: 0, B: 0, C: 0, D: 0 };
